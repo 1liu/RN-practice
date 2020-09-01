@@ -10,18 +10,27 @@ const HomeScreen = ({navigation}) => {
         title="Go to Components DEMO"
         onPress={() => navigation.navigate("Components")}
       />
-      <TouchableOpacity
+{/*       <TouchableOpacity
         onPress={() => navigation.navigate("List")}
       >
         <Text>Go to List DEMO</Text>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
+      <Button
+        title="Go to List DEMO"
+        onPress={() => navigation.navigate("List")}
+      />
+      <Button
+        title="Go to Image DEMO"
+        onPress={() => navigation.navigate("Image")}
+      />
     </View>
   )
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    textAlign: "center"
   }
 });
 
